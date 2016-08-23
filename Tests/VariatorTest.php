@@ -2,14 +2,14 @@
 
 declare (strict_types=1);
 
-namespace Codesushi\Variator\Tests;
+namespace Coshi\Variator\Tests;
 
-use Codesushi\Variator\ConfigResolver;
-use Codesushi\Variator\Exception\CircularDependencyException;
-use Codesushi\Variator\Tests\Fixtures\TestClass;
-use Codesushi\Variator\Variation\VariationInterface;
-use Codesushi\Variator\VariationFactory;
-use Codesushi\Variator\VariationsTreeBuilder;
+use Coshi\Variator\ConfigResolver;
+use Coshi\Variator\Exception\CircularDependencyException;
+use Coshi\Variator\Tests\Fixtures\TestClass;
+use Coshi\Variator\Variation\VariationInterface;
+use Coshi\Variator\VariationFactory;
+use Coshi\Variator\VariationsTreeBuilder;
 
 class VariatorTest extends \PHPUnit_Framework_TestCase
 {

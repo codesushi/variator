@@ -1,6 +1,6 @@
 <?php
 
-namespace Codesushi\Variator\Exception;
+namespace Coshi\Variator\Exception;
 
 class CircularDependencyException extends \Exception
 {

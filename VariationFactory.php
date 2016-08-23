@@ -2,10 +2,10 @@
 
 declare (strict_types=1);
 
-namespace Codesushi\Variator;
+namespace Coshi\Variator;
 
-use Codesushi\Variator\Variation\AbstractVariation;
-use Codesushi\Variator\Variation\Type as VariationType;
+use Coshi\Variator\Variation\AbstractVariation;
+use Coshi\Variator\Variation\Type as VariationType;
 
 class VariationFactory
 {

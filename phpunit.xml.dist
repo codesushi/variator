@@ -11,7 +11,7 @@
     </php>
 
     <testsuites>
-        <testsuite name="Codesushi Variator Test Suite">
+        <testsuite name="Coshi Variator Test Suite">
             <directory>./Tests/</directory>
         </testsuite>
     </testsuites>

@@ -2,7 +2,7 @@
 
 declare (strict_types=1);
 
-namespace Codesushi\Variator\Exception;
+namespace Coshi\Variator\Exception;
 
 class Helper
 {

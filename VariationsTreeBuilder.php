@@ -2,11 +2,11 @@
 
 declare (strict_types=1);
 
-namespace Codesushi\Variator;
+namespace Coshi\Variator;
 
-use Codesushi\Variator\Variation\AbstractVariation;
-use Codesushi\Variator\Exception\Helper;
-use Codesushi\Variator\Variation\VariationInterface;
+use Coshi\Variator\Variation\AbstractVariation;
+use Coshi\Variator\Exception\Helper;
+use Coshi\Variator\Variation\VariationInterface;
 
 class VariationsTreeBuilder
 {

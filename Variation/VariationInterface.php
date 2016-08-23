@@ -2,7 +2,7 @@
 
 declare (strict_types=1);
 
-namespace Codesushi\Variator\Variation;
+namespace Coshi\Variator\Variation;
 
 interface VariationInterface extends \Iterator
 {

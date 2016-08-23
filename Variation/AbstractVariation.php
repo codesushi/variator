@@ -2,9 +2,9 @@
 
 declare (strict_types=1);
 
-namespace Codesushi\Variator\Variation;
+namespace Coshi\Variator\Variation;
 
-use Codesushi\Variator\ConfigResolver;
+use Coshi\Variator\ConfigResolver;
 
 abstract class AbstractVariation implements VariationInterface
 {
@@ -220,7 +220,7 @@ abstract class AbstractVariation implements VariationInterface
      *
      * @return bool
      *
-     * @throws \Codesushi\Variator\Exception\InvalidConfigurationException
+     * @throws \Coshi\Variator\Exception\InvalidConfigurationException
      */
     protected function requireArguments(array $parameters) : bool
     {

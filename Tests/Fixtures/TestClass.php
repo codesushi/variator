@@ -2,7 +2,7 @@
 
 declare (strict_types=1);
 
-namespace Codesushi\Variator\Tests\Fixtures;
+namespace Coshi\Variator\Tests\Fixtures;
 
 class TestClass
 {

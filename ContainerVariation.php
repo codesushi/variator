@@ -2,9 +2,9 @@
 
 declare (strict_types=1);
 
-namespace Codesushi\Variator;
+namespace Coshi\Variator;
 
-use Codesushi\Variator\Variation\AbstractVariation;
+use Coshi\Variator\Variation\AbstractVariation;
 
 class ContainerVariation extends AbstractVariation
 {

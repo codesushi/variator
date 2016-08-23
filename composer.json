@@ -1,11 +1,11 @@
 {
-    "name": "codesushi/variator",
+    "name": "coshi/variator",
     "description": "Utils for generating arrays of data combinations",
     "license": "MIT",
     "type": "library",
     "autoload": {
         "psr-4": {
-            "Codesushi\\Variator\\": ""
+            "Coshi\\Variator\\": ""
         },
         "exclude-from-classmap": [
             "/Tests/"

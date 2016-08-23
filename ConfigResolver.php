@@ -2,10 +2,10 @@
 
 declare (strict_types=1);
 
-namespace Codesushi\Variator;
+namespace Coshi\Variator;
 
-use Codesushi\Variator\Exception\InvalidConfigurationException;
-use Codesushi\Variator\Variation\VariationInterface;
+use Coshi\Variator\Exception\InvalidConfigurationException;
+use Coshi\Variator\Variation\VariationInterface;
 
 class ConfigResolver
 {

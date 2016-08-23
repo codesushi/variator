@@ -2,9 +2,9 @@
 
 declare (strict_types=1);
 
-namespace Codesushi\Variator\Variation\Type;
+namespace Coshi\Variator\Variation\Type;
 
-use Codesushi\Variator\ConfigResolver;
+use Coshi\Variator\ConfigResolver;
 
 class CallbackVariation extends ArrayVariation
 {
