@@ -24,12 +24,31 @@ class IntVariation extends AbstractVariation
      */
     private $current;
 
+    /**
+     * @var array
+     */
+    private $minCallback;
+
+    /**
+     * @var array
+     */
+    private $maxCallback;
+
     public function __construct(string $name, array $parameters, ConfigResolver $configResolver)
     {
         parent::__construct($name, $parameters, $configResolver);
 
-        $this->max = (is_array($parameters['max'])) ? $configResolver->resolveCallback($parameters['max']) : (int) $parameters['max'];
-        $this->min = (is_array($parameters['min'])) ? $configResolver->resolveCallback($parameters['min']) : (int) $parameters['min'];
+        if (is_array($parameters['max'])) {
+            $this->maxCallback = $configResolver->resolveCallback($parameters['max']);
+        } else {
+            $this->max = (int) $parameters['max'];
+        }
+
+        if (is_array($parameters['min'])) {
+            $this->minCallback = $configResolver->resolveCallback($parameters['min']);
+        } else {
+            $this->min = (int) $parameters['min'];
+        }
     }
 
     /**
@@ -61,12 +80,12 @@ class IntVariation extends AbstractVariation
             return false;
         }
 
-        if (is_array($this->max)) {
-            return $this->containsArgumentsPattern($this->max['arguments'], $name);
+        if (is_array($this->maxCallback)) {
+            return $this->containsArgumentsPattern($this->maxCallback['arguments'], $name);
         }
 
-        if (is_array($this->min)) {
-            return $this->containsArgumentsPattern($this->min['arguments'], $name);
+        if (is_array($this->minCallback)) {
+            return $this->containsArgumentsPattern($this->minCallback['arguments'], $name);
         }
 
         return false;
@@ -122,12 +141,12 @@ class IntVariation extends AbstractVariation
 
     protected function doRewind()
     {
-        if (is_array($this->max)) {
-            $this->max = (int) $this->configResolver->call($this->max);
+        if (is_array($this->maxCallback)) {
+            $this->max = (int) $this->configResolver->call($this->maxCallback);
         }
 
-        if (is_array($this->min)) {
-            $this->min = (int) $this->configResolver->call($this->min);
+        if (is_array($this->minCallback)) {
+            $this->min = (int) $this->configResolver->call($this->minCallback);
         }
         $this->current = $this->min;
     }
